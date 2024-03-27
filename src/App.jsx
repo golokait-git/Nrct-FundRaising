@@ -1,10 +1,10 @@
 // import './App.css'
-import CarouselCustomNavigation from "./component/Slider.jsx";
+import Home from "./component/Home/Home";
 function App() {
 
   return (
     <>
-      <CarouselCustomNavigation />
+      <Home/>
     </>
   );
 }
