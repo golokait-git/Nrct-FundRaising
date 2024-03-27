@@ -1,13 +1,10 @@
 // import './App.css'
-
+import CarouselCustomNavigation from "./component/Slider.jsx";
 function App() {
-
 
   return (
     <>
-      <div className="ml-10">
-        <h1 className="text-blue-500">Hello</h1>
-      </div>
+      <CarouselCustomNavigation />
     </>
   );
 }
