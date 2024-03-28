@@ -6,10 +6,10 @@ const AboutComponent = () => {
     <>
       <div className="text-center mb-3">
         <h1 className="mb-1 [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-green-500 font-serif font-medium text-xl sm:text-2xl lg:text-4xl tracking-widest mt-8 my-8">
-          NATURAL REHABILITATION &
+        NATURAL REHABILITATION & 
         </h1>
         <h1 className="font-medium [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-green-500 font-serif text-xl sm:text-2xl lg:text-4xl tracking-widest">
-          RESEARCH CENTER
+        RESEARCH CHARITABLE TRUST
         </h1>
       </div>
 
