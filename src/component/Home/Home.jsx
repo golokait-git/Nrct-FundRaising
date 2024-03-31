@@ -4,7 +4,9 @@ import About from "./About/About";
 import Donation from "./Donation/Donation";
 import Footer from "./Footer/Footer";
 import Activities from "./Acitivities/Activities";
+
 import Exploremore from "./Exploremore/Exploremore";
+import Contact from "../Contact/Contact";
 export default function Home() {
   return (
     <>
@@ -13,6 +15,7 @@ export default function Home() {
         <Donation/>
         <Exploremore/>
         <Activities/>
+        <Contact/>
         <Footer/>
       
     </>
