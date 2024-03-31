@@ -1,12 +1,13 @@
-package com.example.nrct.service;
-
-import com.example.nrct.model.NrctModel;
-import com.example.nrct.repository.NrctRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+package com.nrct.service;
 
 import java.util.List;
 import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nrct.model.NrctModel;
+import com.nrct.repository.NrctRepository;
 
 @Service
 public class NrctService {

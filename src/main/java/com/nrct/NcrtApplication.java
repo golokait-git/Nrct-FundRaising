@@ -1,14 +1,13 @@
-package com.example.nrct;
+package com.nrct;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NrctApplication {
+public class NcrtApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NrctApplication.class, args);
-		System.out.println("Hey");
+		SpringApplication.run(NcrtApplication.class, args);
 	}
 
 }

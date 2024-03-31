@@ -1,17 +1,21 @@
-package com.example.nrct.controller;
+package com.nrct.controller;
 
-import com.example.nrct.model.NrctModel;
-import com.example.nrct.service.NrctService;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import javax.mail.MessagingException;
-import javax.mail.internet.MimeMessage;
-import org.springframework.mail.javamail.MimeMessageHelper;
-
-import java.util.List;
+import com.nrct.model.NrctModel;
+import com.nrct.service.NrctService;
 
 @RestController
 @RequestMapping("/api/v1/nrct")
@@ -64,9 +68,7 @@ public class NrctController {
             System.out.println(nrctModel.getEmail());
                 jakarta.mail.internet.MimeMessage message = javaMailSender.createMimeMessage();
                 MimeMessageHelper helper = new MimeMessageHelper(message, true);
-                System.out.println(message);
-                System.out.println(helper);
-                helper.setTo(nrctModel.getEmail());
+                helper.setTo(nrctModel.getEmail().toString());
                 helper.setSubject("Thank you for your donation");
                 helper.setText("Dear " + nrctModel.getName() + ",\n\n"
                         + "Thank you for your donation of $" + nrctModel.getAmount() + ".\n"
@@ -77,7 +79,7 @@ public class NrctController {
                         + "Your Organization");
 
                 javaMailSender.send(message);
-                System.out.println(message);
+                System.out.println("Mail Sent");
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println(e);

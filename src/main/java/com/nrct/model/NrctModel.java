@@ -1,4 +1,4 @@
-package com.example.nrct.model;
+package com.nrct.model;
 
 import java.util.Date;
 
