@@ -1,4 +1,5 @@
 import React from "react";
+import { logo } from "../../../assets";
 
 function Footer() {
   return (
@@ -22,7 +23,7 @@ function Footer() {
           <li className="text-white list-none hover:text-gray-300">Activities</li>
           <li className="text-white list-none hover:text-gray-300">Donate</li>
           <li>
-            <img src="" alt="Your Company Logo" className="h-8 w-8 mr-4" />
+            <img src={logo} alt="Your Company Logo" className="h-8 w-8 mr-4" />
           </li>
           <li className="text-white list-none hover:text-gray-300">About Us</li>
           <li className="text-white list-none hover:text-gray-300">Contact Us</li>

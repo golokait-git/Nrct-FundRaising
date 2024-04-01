@@ -1,48 +1,49 @@
 import { Carousel } from "@material-tailwind/react";
 import { useNavigate } from 'react-router-dom'; // Import useHistory from React Router
-
+import {      divineNaturePark,goshala,logo,meditation,naturopathy,organicFarm,vandeMataMandir,yogaCenter
+} from "../../../../src/assets/index.js";
 export function CarouselCustomNavigation() {
   const navigate = useNavigate(); // Initialize useHistory
 
   // Array of image data with respective content and navigation URLs
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
+      src:goshala,
       alt: "image 1",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet odio sit amet eleifend malesuada.",
       buttonLabel: "Learn More 1",
       navigateTo: "/page1",
     },
     {
-      src: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+      src: divineNaturePark,
       alt: "image 2",
       content: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
       buttonLabel: "Learn More 2",
       navigateTo: "/page2",
     },
     {
-      src: "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
+      src: meditation,
       alt: "image 3",
       content: "Vestibulum at libero eget nibh sagittis elementum id non ex. Aliquam vitae accumsan est.",
       buttonLabel: "Learn More 3",
       navigateTo: "/page3",
     },
     {
-      src: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
+      src: naturopathy,
       alt: "image 1",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet odio sit amet eleifend malesuada.",
       buttonLabel: "Learn More 1",
       navigateTo: "/page1",
     },
     {
-      src: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+      src: organicFarm,
       alt: "image 2",
       content: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
       buttonLabel: "Learn More 2",
       navigateTo: "/page2",
     },
     {
-      src: "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
+      src: vandeMataMandir,
       alt: "image 3",
       content: "Vestibulum at libero eget nibh sagittis elementum id non ex. Aliquam vitae accumsan est.",
       buttonLabel: "Learn More 3",
@@ -62,7 +63,7 @@ export function CarouselCustomNavigation() {
           <li className="text-white list-none hover:text-gray-300">Activities</li>
           <li className="text-white list-none hover:text-gray-300">Donate</li>
           <li>
-            <img src="" alt="Your Company Logo" className="h-8 w-8 mr-4" />
+            <img src={logo} alt="Your Company Logo" className="h-8 w-8 mr-4" />
           </li>
           <li className="text-white list-none hover:text-gray-300">About Us</li>
           <li className="text-white list-none hover:text-gray-300">Contact Us</li>
@@ -94,7 +95,7 @@ export function CarouselCustomNavigation() {
               className="h-screen w-full object-cover object-center"
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-              <p>{image.content}</p>
+              {/* <p>{image.content}</p> */}
               <button
                 className="bg-transparent hover:bg-white hover:text-black hover:border-black text-white font-medium py-2 px-4 rounded-3xl border-2 border-gray-50 mt-60"
                 onClick={() => handleNavigate(image.navigateTo)}
