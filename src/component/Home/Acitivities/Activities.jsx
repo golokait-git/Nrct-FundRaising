@@ -1,15 +1,11 @@
 import React from 'react';
-
+import {   activityDivineNaturePark,activitygoshala,activityMeditation,activityNaturopathy,activityOrganicFarm,activityVandeviMataMandir,activityYoga
+} from '../../../assets';
 function Activities() {
   const imageUrls = [
     // Replace these placeholders with your actual image URLs
-    'https://via.placeholder.com/250x300',
-    'https://via.placeholder.com/250x300',
-    'https://via.placeholder.com/250x300',
-    'https://via.placeholder.com/250x300',
-    'https://via.placeholder.com/250x300',
-    'https://via.placeholder.com/250x300',
-    'https://via.placeholder.com/250x300'
+    activityDivineNaturePark,activitygoshala,activityMeditation,activityNaturopathy,activityOrganicFarm,activityVandeviMataMandir,activityYoga
+
   ];
 
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { donationRightImage } from '../../../assets';
 function Donation() {
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedType, setSelectedType] = useState(null);
@@ -56,8 +56,8 @@ function Donation() {
       </div>
       <div className="flex justify-center">
         <div className="bg-white rounded-lg overflow-hidden shadow-lg h-full md:h-4/5 w-4/5 md:w-4/5">
-          <div className="flex">
-            <div className="w-7/12 bg-gray-200">
+          <div className="flex h-[calc(100vh/1.3)]">
+            <div className="w-7/12  bg-gray-200">
               <div className="mt-8 ml-5">
                 <h1 className="mb-1 font-sans font-extrabold text-xl tracking-widest">
                   Where would you like to Donate?
@@ -158,14 +158,17 @@ function Donation() {
               </div>
               {/* Content on the left side */}
             </div>
-            <div className="w-5/12">
-              {/* Image on the right side */}
-              <img
-                className="w-full h-full object-cover"
-                src="https://via.placeholder.com/300"
-                alt="Image"
-              />
-            </div>
+            <div className="w-5/12 relative">
+  {/* Image container */}
+  <div className="h-[85vh]">
+    <img
+      className="object-fill h-full w-full"
+      src={donationRightImage}
+      alt="Image"
+    />
+  </div>
+</div>
+
           </div>
         </div>
       </div>

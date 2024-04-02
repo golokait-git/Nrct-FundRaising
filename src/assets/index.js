@@ -17,7 +17,20 @@ import organicFarm from "../assets/headerImage/organic-farm.png"
 import vandeMataMandir from "../assets/headerImage/vande-mata-mandir.png"
 import yogaCenter from "../assets/headerImage/yoga-center.png"
 import logo from "../assets/logo/logo.png"
+import donationRightImage from "./donation/donation-compaign-right-image.png"
+export{
+  donationRightImage, logo, divineNaturePark,goshala,meditation,naturopathy,organicFarm,vandeMataMandir,yogaCenter
+}
+
+// home-activities
+import activityDivineNaturePark from "../assets/homeActivities/activities-divine-nature-park.png"
+import activitygoshala from "../assets/homeActivities/activities-goshala.png"
+import activityMeditation from "../assets/homeActivities/activities-meditation.png"
+import activityNaturopathy from "../assets/homeActivities/activities-naturopathy.png"
+import activityOrganicFarm from "../assets/homeActivities/activities-organic-farm.png"
+import activityVandeviMataMandir from "../assets/homeActivities/activities-vandevi-mata-mandir.png"
+import activityYoga from "../assets/homeActivities/activities-yoga.png"
 
 export{
-   logo, divineNaturePark,goshala,meditation,naturopathy,organicFarm,vandeMataMandir,yogaCenter
+  activityDivineNaturePark,activitygoshala,activityMeditation,activityNaturopathy,activityOrganicFarm,activityVandeviMataMandir,activityYoga
 }

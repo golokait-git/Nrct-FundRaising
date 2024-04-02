@@ -2,6 +2,7 @@ import { Carousel } from "@material-tailwind/react";
 import { useNavigate } from 'react-router-dom'; // Import useHistory from React Router
 import {      divineNaturePark,goshala,logo,meditation,naturopathy,organicFarm,vandeMataMandir,yogaCenter
 } from "../../../../src/assets/index.js";
+import Navbar from "../../Navbar/Navbar.jsx";
 export function CarouselCustomNavigation() {
   const navigate = useNavigate(); // Initialize useHistory
 
@@ -49,6 +50,13 @@ export function CarouselCustomNavigation() {
       buttonLabel: "Learn More 3",
       navigateTo: "/page3",
     },
+    {
+      src: yogaCenter,
+      alt: "image 3",
+      content: "Vestibulum at libero eget nibh sagittis elementum id non ex. Aliquam vitae accumsan est.",
+      buttonLabel: "Learn More 3",
+      navigateTo: "/page3",
+    },
   ];
 
   const handleNavigate = (url) => {
@@ -57,18 +65,7 @@ export function CarouselCustomNavigation() {
 
   return (
     <div className="relative">
-      <div className="absolute top-0 left-0 right-0 flex justify-center items-center py-4 px-6 z-50">
-        <nav className="flex gap-14 items-center">
-          <li className="text-white list-none hover:text-gray-300">Home</li>
-          <li className="text-white list-none hover:text-gray-300">Activities</li>
-          <li className="text-white list-none hover:text-gray-300">Donate</li>
-          <li>
-            <img src={logo} alt="Your Company Logo" className="h-8 w-8 mr-4" />
-          </li>
-          <li className="text-white list-none hover:text-gray-300">About Us</li>
-          <li className="text-white list-none hover:text-gray-300">Contact Us</li>
-        </nav>
-      </div>
+    <Navbar/>
 
       <Carousel
         className="rounded-xl relative overflow-hidden"
@@ -92,16 +89,16 @@ export function CarouselCustomNavigation() {
             <img
               src={image.src}
               alt={image.alt}
-              className="h-screen w-full object-cover object-center"
+              className="h-screen w-full object-fill object-center "
             />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
               {/* <p>{image.content}</p> */}
-              <button
+              {/* <button
                 className="bg-transparent hover:bg-white hover:text-black hover:border-black text-white font-medium py-2 px-4 rounded-3xl border-2 border-gray-50 mt-60"
                 onClick={() => handleNavigate(image.navigateTo)}
               >
                 {image.buttonLabel}
-              </button>
+              </button> */}
             </div>
           </div>
         ))}
