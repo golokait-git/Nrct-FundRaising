@@ -1,5 +1,5 @@
 import React from 'react'
-import { ghosala1,ghosala2,ghosala3,ghosala4,ghosala5 } from '../../../public/assests'
+import { ghosala1,ghosala2,ghosala3,ghosala4,ghosala5  } from '../../assets' 
 function Ghosala() {
   return (
     <>
